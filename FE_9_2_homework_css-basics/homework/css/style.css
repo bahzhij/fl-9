@@ -1,0 +1,143 @@
+@media print {
+    .tm-sidebar,
+    .gallery-container,
+    section:not(:first-of-type) {
+        display: none;
+    }
+    .tm-banner {
+        height: 240px;
+        margin: 0 10px 0 30px;
+    }
+    .tm-main-content {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .tm-content-box {
+        display: block;
+        margin: 0;
+    }
+    h2.tm-section-title {
+        color: #0000FF;
+    }
+    .flex-item:last-child {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .pad {
+        padding: 0 0 0 80px;
+    }
+    .tm-team-description-container {
+        max-width: none;
+        padding-right: 50px;
+    }
+}
+
+@media screen {
+    /* task 1 */
+    .thumbnail {
+        border-radius: 50%;
+    }
+    .tm-section-title-box:hover {
+        background-color: #31b0d5;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 200%;
+        font-weight: bold;
+        transition: all .3s ease;
+    }
+    /* task 3 */
+    p::first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+    /* task 4 */
+    .tm-main-nav,
+    .tm-content-box {
+        box-shadow: 0 0 15px #959295;
+    }
+    /* task 5 */
+    .tm-content-box:first-of-type,
+    section {
+        position: relative;
+    }
+    .tm-content-box:first-of-type::before,
+    section::before {
+        border-right: 120px solid transparent;
+        border-top: 25px solid #31b0d5;
+        content: "";
+        height: 0;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 0;
+    }
+    /* task 6 */
+    .carousel-content .tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+    /* task 7 */
+    h2+p {
+        font-style: italic;
+    }
+    /* task 8 */
+    p:not(.tm-banner-text) {
+        line-height: 200%;
+        text-indent: 7%;
+    }
+    /* task 9 */
+    ol a:link {
+        color: #000000;
+    }
+    ol a:visited {
+        color: #C0C0C0;
+    }
+    ol a:hover {
+        color: #75ccd6;
+        text-decoration: underline double;
+    }
+    .pad .text::after {
+        color: #FF0000;
+        content: "New";
+        font-size: 65%;
+        vertical-align: super;
+    }
+    .pad h2 {
+        color: #75ccd6;
+        text-align: center;
+    }
+    /* task 10 */
+    .gallery-container .box:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+    .gallery-container .box h2 {
+        font-size: 290%;
+    }
+    .gallery-container .box p {
+        font-size: 135%;
+        line-height: 140%;
+        text-indent: 0;
+    }
+    .gallery-container .box p:first-letter {
+        color: #000000;
+    }
+    /* task 11 */
+    .tm-nav-item:not(:last-child) {
+        border-bottom-color: #C0C0C0;
+        border-bottom-style: dotted;
+    }
+    /* task 12 */
+    .contact-form input,
+    .contact-form button {
+        color: #FF0000;
+    }
+    .form-group-2-col-right::after {
+        color: #FF0000;
+        content: "*";
+        font-weight: bold;
+    }
+    .submit-btn:hover {
+        background-color: #31b0d5;
+        border-color: transparent;
+    }
+}
