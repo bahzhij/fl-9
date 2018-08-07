@@ -1,0 +1,212 @@
+body {
+    background: $body-background-color;
+    font-family: $global-font;
+    margin: auto;
+    width: 1200px;    
+}
+
+.main-wrapper {
+    margin: 0 auto;
+    width: 950px;   
+}
+
+header {
+    display: flex;
+    height: 230px;
+    position: relative;
+
+    .logo{
+        max-height: 100%;
+        max-width: 40%;
+
+        img {
+            height: 100%;
+            width: 100%;           
+        }
+    }
+
+    nav {
+        border-bottom: 1px solid $global-border-color;
+        border-top: 1px solid $global-border-color;
+        bottom: 20px;    
+        display: flex;
+        justify-content: space-around;               
+        position: absolute;        
+        right: 0;
+        width: 60%; 
+        
+        a { 
+            color: $global-text-color;
+            font-size: $navigation-font-size;
+            padding: 20px;
+            text-decoration: none;           
+            text-transform: uppercase;            
+        }
+    }  
+}
+// search toolbar
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 0;
+
+    input {       
+        border: 1px solid $global-text-color;
+        background: $body-background-color;
+        height: 35px;
+        outline-color: darken($global-text-color, 10%);
+        padding-left: 20px;
+        width: 170px;
+
+        &::placeholder {
+            color: $global-text-color;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+    }
+}
+
+// articles
+
+.post-list {      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: -15px;
+       
+    article {
+        background: $article-background;
+        display: block;
+        margin-bottom: 20px;
+        max-height: 700px;
+        padding: 10px;        
+        width: 45%;       
+        
+        img{
+            width: 100%;        
+        }
+
+        .post-description {
+            border-bottom: 1px solid $global-border-color;
+            color: $description-text-color;
+            font-size: $description-font-size;
+            padding: 10px;            
+        }
+
+        div{
+            padding-left: 10px;
+
+            h3{
+                color: $article-heading-color;
+                font-size: $article-heading-font-size;               
+                text-transform: uppercase;                
+            }
+
+            p{
+                color: $article-text-color;
+                font-size: $article-font-size;
+                line-height: 150%;               
+                padding: 0;                
+            }
+        }        
+    }
+}
+
+// about
+
+.about {
+    margin: 0 10px 50px 20px;
+    max-width: 100%;    
+    
+    h1 {
+        color: $global-text-color;
+        display: flex;
+        font-size: $about-heading-font-size;
+        justify-content: flex-end;
+        margin-bottom: 0;
+        margin-top: 60px;        
+        text-align: left;
+        text-transform: uppercase;        
+    }
+
+    p {
+        color: $article-text-color;
+        font-size: $about-font-size;
+        line-height: 150%;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+// contact-form
+
+.contact-form {
+
+    h1 {
+        color: $global-text-color;
+        display: flex;
+        font-size:$contact-heading-font-size;
+        justify-content: flex-end;
+        margin: 0;
+        text-transform: uppercase; 
+    }
+
+    h4 {
+        color: $global-text-color;
+        display: flex;
+        font-size:$contact-heading-font-size2;
+        justify-content: flex-end;
+        margin: 0;
+        text-transform: uppercase; 
+    }    
+}
+
+form {
+
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+    input,textarea {
+        border: 1px solid $global-border-color;
+        background: $body-background-color;
+        margin-bottom: 15px;
+        max-height: 100px;
+        outline-color: darken($global-text-color, 10%);
+        padding: 15px;
+
+        &::placeholder {
+            font-family: $global-font;
+            font-size: $article-font-size;
+        }
+    }
+
+    button {
+        align-self: flex-end;
+        background: $global-text-color;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        height: 40px;
+        text-transform: uppercase;
+        width: 200px;
+        
+        &:hover {
+            background: darken($global-text-color, 10%);
+        }       
+    }
+}
+
+// footer
+
+footer {
+    color: $footer-color;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
