@@ -14,7 +14,7 @@ if (confirm('Do you want to play a game?')) {
     alert('You did not become a millionaire, but can.');
 }
 function generateNumber(max) {
-    randomNumber = Math.floor(Math.random() * max);
+    randomNumber = Math.floor(Math.random() * ++max);
 
 }
 function guessingGame() {    
