@@ -69,7 +69,7 @@ function findType(data) {
     let startMonth = 4,
         endMonth = 7;
     return `It is ${date.getDate()} of ${date
-      .toDateString()
+      .toString()
       .substring(startMonth, endMonth)}, ${date.getFullYear()};`;
   }
   
