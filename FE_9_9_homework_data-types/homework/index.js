@@ -67,7 +67,7 @@ function findType(data) {
   //task 8
   function showFormattedDate(date) {
     let startMonth = 4,
-      endMonth = 7;
+        endMonth = 7;
     return `It is ${date.getDate()} of ${date
       .toDateString()
       .substring(startMonth, endMonth)}, ${date.getFullYear()};`;
