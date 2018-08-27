@@ -82,5 +82,5 @@ function showFormattedDate(date) {
 	];
 	return `It is ${date.getDate()} of ${
 		MONTH_NAMES[date.getMonth()]
-	}, ${date.getFullYear()};`;
+	}, ${date.getFullYear()}`;
 }
