@@ -66,7 +66,7 @@ function values(basicArray) {
 
 //task 8
 function showFormattedDate(date) {
-	let MONTH_NAMES = [
+	const MONTH_NAMES = [
 		'Jan',
 		'Feb',
 		'Mar',
