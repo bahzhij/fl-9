@@ -44,32 +44,29 @@ function findType(data) {
   
   //task 6
   function keys(basicArray) {
-    let modifiedArray = [];
+    let keysArray = [];
     for (let key in basicArray) {
       if (basicArray.hasOwnProperty(key)) {
-        modifiedArray.push(key);
+        keysArray.push(key);
       }
     }
-    return modifiedArray;
+    return keysArray;
   }
   
   //task 7
   function values(basicArray) {
-    let modifiedArray = [];
+    let valuesArray = [];
     for (let key in basicArray) {
       if (basicArray.hasOwnProperty(key)) {
-        modifiedArray.push(basicArray[key]);
+        valuesArray.push(basicArray[key]);
       }
     }
-    return modifiedArray;
+    return valuesArray;
   }
   
   //task 8
   function showFormattedDate(date) {
-    let startMonth = 4,
-        endMonth = 7;
-    return `It is ${date.getDate()} of ${date
-      .toString()
-      .substring(startMonth, endMonth)}, ${date.getFullYear()};`;
+    let MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return `It is ${date.getDate()} of ${MONTH_NAMES[date.getMonth()]}, ${date.getFullYear()};`;
   }
   
