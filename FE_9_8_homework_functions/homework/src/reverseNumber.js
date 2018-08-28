@@ -1,8 +1,11 @@
-function reverseNumber(n) {    
-    let reversedVersion = parseInt(Math.abs(n).toString().split('').reverse().join(''));
-    if(n < 0) {
-        return -reversedVersion;
-    } else {
-        return reversedVersion;
-    }
-} 
+function reverseNumber(number) {
+	return (
+		parseInt(
+			number
+				.toString()
+				.split('')
+				.reverse()
+				.join('')
+		) * Math.sign(number)
+	);
+}
