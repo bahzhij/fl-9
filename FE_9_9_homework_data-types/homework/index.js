@@ -66,21 +66,9 @@ function values(basicArray) {
 
 //task 8
 function showFormattedDate(date) {
-	const MONTH_NAMES = [
-		'Jan',
-		'Feb',
-		'Mar',
-		'Apr',
-		'May',
-		'Jun',
-		'Jul',
-		'Aug',
-		'Sep',
-		'Oct',
-		'Nov',
-		'Dec'
-	];
-	return `It is ${date.getDate()} of ${
-		MONTH_NAMES[date.getMonth()]
-	}, ${date.getFullYear()}`;
+	let day = date.getDate();
+	let month = date.toLocaleString('en-US', { month: 'short' });
+	let year = date.getFullYear();
+	
+	return `It is ${day} of ${month}, ${year}`;
 }
