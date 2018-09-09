@@ -1,8 +1,6 @@
 const rootNode = document.getElementById('root');
 let itemListStorage = [];
 
-
-
 function createElement(element, attribute, inner) {
     if (typeof element === 'undefined') {
       return false;
@@ -202,7 +200,6 @@ const storageData = {
     return itemListStorage;
   }
 };
-
 
 const router = {
   load() {
