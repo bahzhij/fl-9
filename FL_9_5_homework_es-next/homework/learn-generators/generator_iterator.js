@@ -1,13 +1,13 @@
 function* factorial(n) {
-	let output = 1;
+  let output = 1;
 
-	for (let i = 1; i <= n; i++) {
-		output *= i;
+  for (let i = 1; i <= n; i++) {
+    output *= i;
 
-		yield output;
-	}
+    yield output;
+  }
 }
 
 for (let n of factorial(5)) {
-	console.log(n);
+  console.log(n);
 }
