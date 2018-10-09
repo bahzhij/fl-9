@@ -1,6 +1,6 @@
 const json = {
   name: {
-    first: "Yosuke",
+    first: 'Yosuke',
     family: process.argv[2]
   },
   birth: {
