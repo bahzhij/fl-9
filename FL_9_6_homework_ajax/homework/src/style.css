@@ -1,0 +1,308 @@
+body {
+	align-items: center;
+	background: radial-gradient(ellipse at center, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+	display: flex;
+	flex-direction: column;
+	font-family: 'Couriers', sans-serif;
+	justify-content: center;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+form {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 200px;
+	;
+}
+
+input {
+	border-radius: 5px;
+	margin-bottom: 3px;
+	outline: none;
+	padding: 4px;
+}
+
+.button {
+	background-color: #33cc33;
+	font-weight: bold;
+	margin-top: 5px;
+	width: 175px;
+}
+
+.button:hover {
+	background-color: #1f7a1f;
+	color: #FFFFFF;
+}
+
+main {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	height: 500px;
+	width: 800px;
+}
+
+.loader {
+	animation: spin 2s linear infinite;
+	border: 16px solid #f3f3f3;
+	border-bottom: 16px solid #cca300;
+	border-radius: 50%;
+	border-top: 16px solid #3366ff;
+	display: none;
+	height: 120px;
+	width: 120px;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.animation-water {
+	color: #3366ff;
+	display: none;
+	font-size: 10rem;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	justify-content: space-between;
+	position: relative;
+}
+
+.animation-land {
+	color: #cca300;
+	display: none;
+	font-size: 10rem;
+	justify-content: space-around;
+	position: relative;
+}
+
+.slider-water,
+.water-1,
+.water-2,
+.water-3 {
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(0.15, -0.01, 0.58, 1);
+	will-change: transform;
+}
+
+.slider-water {
+	animation-name: slider;
+	background-color: #3366ff;
+	height: 0.9rem;
+	left: 1rem;
+	position: absolute;
+	top: 2rem;
+	width: 9.5rem;
+}
+
+.static-1 {
+	margin-left: 1rem;
+}
+
+.water-1 {
+	animation-name: first-water;
+	margin-left: 0;
+}
+
+.water-2 {
+	animation-name: second-water;
+	margin-left: 1rem;
+}
+
+.water-3 {
+	margin-left: 1rem;
+	animation-name: third-water;
+}
+
+.static-2 {
+	margin-left: 20rem;
+}
+
+.land-1,
+.land-2,
+.land-3,
+.land-4 {
+	animation-duration: 4s;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.15, -0.01, 0.58, 1);
+	will-change: transform;
+}
+
+.land-1 {
+	animation-name: first-land;
+	margin-top: 0;
+}
+
+.land-2 {
+	animation-name: second-land;
+	margin-top: 0;
+}
+
+.land-3 {
+	animation-name: third-land;
+	margin-top: 0;
+}
+
+.land-4 {
+  animation-name: fourth-land;
+  margin-top: 0;
+}
+
+@keyframes first-water {
+	0%,
+	20% {
+		transform: translateX(0);
+	}
+	50%,
+	70% {
+		transform: translateX(17rem);
+	}
+}
+
+@keyframes second-water {
+	0%,
+	20% {
+		transform: translateX(0);
+	}
+	50%,
+	70% {
+		transform: translateX(18rem);
+	}
+}
+
+@keyframes third-water {
+	0%,
+	20% {
+		transform: translateX(0);
+	}
+	50%,
+	70% {
+		transform: translateX(19rem);
+	}
+}
+
+@keyframes slider {
+	0%,
+	20% {
+		transform: translateX(0);
+	}
+	50%,
+	70% {
+		transform: translateX(45rem);
+	}
+}
+
+@keyframes first-land {
+	0%,
+	20% {
+		transform: translateY(0);
+	}
+	20%,
+	45% {
+		transform: translateY(15rem);
+	}
+	45%,
+	60% {
+		transform: translateY(-9rem);
+	}
+	60%,
+	80% {
+		transform: translateY(15rem);
+	}
+	80%,
+	90% {
+		transform: translateY(-3rem);
+	}
+	90%,
+	100% {
+		transform: translateY(15rem);
+	}
+}
+
+@keyframes second-land {
+	0%,
+	20% {
+		transform: translateY(0);
+	}
+	20%,
+	45% {
+		transform: translateY(15rem);
+	}
+	45%,
+	60% {
+		transform: translateY(-7rem);
+	}
+	60%,
+	80% {
+		transform: translateY(15rem);
+	}
+	80%,
+	90% {
+		transform: translateY(-1rem);
+	}
+	90%,
+	100% {
+		transform: translateY(15rem);
+	}
+}
+
+@keyframes third-land {
+	0%,
+	20% {
+		transform: translateY(0);
+	}
+	20%,
+	45% {
+		transform: translateY(15rem);
+	}
+	45%,
+	60% {
+		transform: translateY(-11rem);
+	}
+	60%,
+	80% {
+		transform: translateY(15rem);
+	}
+	80%,
+	90% {
+		transform: translateY(-2rem);
+	}
+	90%,
+	100% {
+		transform: translateY(15rem);
+	}
+}
+
+@keyframes fourth-land {
+	0%,
+	20% {
+		transform: translateY(0);
+	}
+	20%,
+	45% {
+		transform: translateY(15rem);
+	}
+	45%,
+	60% {
+		transform: translateY(-7rem);
+	}
+	60%,
+	80% {
+		transform: translateY(15rem);
+	}
+	80%,
+	90% {
+		transform: translateY(-1rem);
+	}
+	90%,
+	100% {
+		transform: translateY(15rem);
+	}
+}
