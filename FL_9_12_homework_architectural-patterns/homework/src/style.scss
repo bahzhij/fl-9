@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$turqoise: #26a69a;
+$red: #E57373;
+$gray: #f8f8f8;
+$white: #fff;
+
+$shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+.root {   
+    align-content: center;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;	
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    align-items: center;
+    background-color: $white;
+    border-bottom: 1px solid $gray;
+    box-shadow: $shadow;
+    display: flex;    
+    justify-content: center;
+    height: 60px;
+    left: 0;    
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+}
+
+table {
+    align-self: center;
+    margin-top: 60px;	
+}
+
+tr {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+    padding: 4px;
+}
+
+td {
+    justify-content: center;
+    padding: 5px;
+}
+
+img {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background: $gray;
+}
+
+.table-header {
+    background-color: $turqoise;
+    color: $white;
+    height: 40px;
+}
+
+.remove-button {
+    background-color: $red;
+    border: none;
+    box-shadow: $shadow;
+    color: $white;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+}
+
+.footer {
+    align-items: center;
+    background-color: $white;
+    border-bottom: 1px solid $gray;
+    box-shadow: $shadow;
+    display: flex;    
+    flex-direction: column;    
+    height: 90px;
+    left: 0;   
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.user-count {
+    margin: 5px 0;
+}
+
+.load-more {
+    background-color: $gray;
+    border: transparent;
+    border-radius: 13px;
+    box-shadow: $shadow;
+    cursor: pointer;
+    outline: none;
+    padding: 7px;
+    width: 25%;
+}
