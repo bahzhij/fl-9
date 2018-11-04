@@ -57,7 +57,7 @@ const renderPage = (state) => {
     </table>
     <footer class="footer">
     <div class="user-count">
-        Displayed ${state.users.length} out of <span id="${SELECTORS.USERS_COUNT.slice(1)}">${state.users.length}</span>
+        Displayed ${state.users.length} users out of <span id="${SELECTORS.USERS_COUNT.slice(1)}">${state.users.length}</span>
     </div>
     <input type="button" class="load-more" value="LOAD MORE" />
     </footer>`;
